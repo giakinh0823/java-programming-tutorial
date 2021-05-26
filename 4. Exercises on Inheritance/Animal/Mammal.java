@@ -9,6 +9,18 @@ package Animal;
  *
  * @author GIA KINH
  */
-public class Mammal {
-    
+public class Mammal extends Animal{
+    private String name;
+
+    public Mammal() {
+    }
+
+    public Mammal(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Mammal["+super.toString() + ",name=" + name + ']';
+    }  
 }
