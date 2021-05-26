@@ -36,14 +36,6 @@ public class Square extends Rectangle{
         super.setLength(side);
     }
     
-    public double getArea(){
-        return this.getSide()*this.getSide();
-    }
-    
-    public double getPerimeter(){
-        return this.getSide()*4;
-    }
-    
     @Override
     public String toString(){
         return "Square["+super.toString()+"]";
