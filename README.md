@@ -1,6 +1,6 @@
 # Java Programming Tutorial OOP Exercises
 # 1.  Exercises on Classes
-1.1  An Introduction to Classes and Instances by Example - The Circle Class
+1.1  An Introduction to Classes and Instances by Example - The Circle Class\n
 1.2  Ex: Yet Another Circle Class
 1.3  Ex: The Rectangle Class
 1.4  Ex: The Employee Class
