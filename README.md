@@ -1,14 +1,14 @@
 # Java Programming Tutorial OOP Exercises
 # 1.  Exercises on Classes
-1.1  An Introduction to Classes and Instances by Example - The Circle Class\n
-1.2  Ex: Yet Another Circle Class
-1.3  Ex: The Rectangle Class
-1.4  Ex: The Employee Class
-1.5  Ex: The InvoiceItem Class
-1.6  Ex: The Account Class
-1.7  Ex: The Date Class
-1.8  Ex: The Time Class
-1.9  Ex: The Ball Class
+>1.1  An Introduction to Classes and Instances by Example - The Circle Class
+>1.2  Ex: Yet Another Circle Class
+>1.3  Ex: The Rectangle Class
+>1.4  Ex: The Employee Class
+>1.5  Ex: The InvoiceItem Class
+>1.6  Ex: The Account Class
+>1.7  Ex: The Date Class
+>1.8  Ex: The Time Class
+>1.9  Ex: The Ball Class
 # 2.  Exercises on Composition
 2.1  An Introduction to OOP Composition by Example - the Author and Book Classes
 2.2  (Advanced) The Author and Book Classes Again - An Array of Objects as an Instance Variable
