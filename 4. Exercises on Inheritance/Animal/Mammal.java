@@ -10,17 +10,17 @@ package Animal;
  * @author GIA KINH
  */
 public class Mammal extends Animal{
-    private String name;
 
     public Mammal() {
     }
 
     public Mammal(String name) {
-        this.name = name;
+        super(name);
     }
 
+    
     @Override
     public String toString() {
-        return "Mammal["+super.toString() + ",name=" + name + ']';
+        return "Mammal["+super.toString() + ']';
     }  
 }
