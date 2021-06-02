@@ -36,4 +36,8 @@ public class Circle extends Shape{
     public String toString() {
         return "Circle["+ super.toString() + ",radius=" + radius + ']';
     }
+
+    public void setRadius(int radius) {
+         this.radius = radius;//To change body of generated methods, choose Tools | Templates.
+    }
 }
