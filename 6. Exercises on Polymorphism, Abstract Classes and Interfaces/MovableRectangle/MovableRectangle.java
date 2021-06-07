@@ -45,14 +45,14 @@ public class MovableRectangle implements Movable {
 
     @Override
     public void moveUp() {
-        this.topLeft.setY(this.topLeft.getY() + this.topLeft.getySpeed());
-        this.bottomRight.setY(this.bottomRight.getY() + this.bottomRight.getySpeed());
+        this.topLeft.setY(this.topLeft.getY() - this.topLeft.getySpeed());
+        this.bottomRight.setY(this.bottomRight.getY() - this.bottomRight.getySpeed());
     }
 
     @Override
     public void moveDown() {
-        this.topLeft.setY(this.topLeft.getY() - this.topLeft.getySpeed());
-        this.bottomRight.setY(this.bottomRight.getY() - this.bottomRight.getySpeed());
+        this.topLeft.setY(this.topLeft.getY() + this.topLeft.getySpeed());
+        this.bottomRight.setY(this.bottomRight.getY() + this.bottomRight.getySpeed());
     }
 
     @Override

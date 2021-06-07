@@ -66,12 +66,12 @@ public class MovablePoint implements Movable{
 
     @Override
     public void moveUp() {
-       this.y+=this.ySpeed;
+       this.y-=this.ySpeed;
     }
 
     @Override
     public void moveDown() {
-        this.y-=this.ySpeed;
+        this.y+=this.ySpeed;
     }
 
     @Override
