@@ -11,5 +11,5 @@ package GeometricObject;
  */
 public interface GeometricObject {
     public double getArea();
-    public double getPgetPerimeter();
+    public double getPerimeter();
 }

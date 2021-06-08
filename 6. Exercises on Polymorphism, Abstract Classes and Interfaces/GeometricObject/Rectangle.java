@@ -48,7 +48,7 @@ public class Rectangle implements GeometricObject{
     }
 
     @Override
-    public double getPgetPerimeter() {
+    public double getPerimeter() {
         return (width+length)*2;
     }
     

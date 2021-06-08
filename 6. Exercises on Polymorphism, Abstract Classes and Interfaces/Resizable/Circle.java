@@ -43,7 +43,7 @@ public class Circle implements GeometricObject{
     }
 
     @Override
-    public double getPgetPerimeter() {
+    public double getPerimeter() {
         return radius*2*Math.PI;
     }
     
