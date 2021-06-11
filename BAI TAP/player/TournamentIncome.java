@@ -97,13 +97,13 @@ public class TournamentIncome extends Player implements GradeBonus {
             return 0;
         }
         if (totalPoint < this.totalMatches * 100 * 0.3) {
-            return GRADE_D_BONUS_PERCENT*1000000/100;
+            return GRADE_D_BONUS_PERCENT*money/100;
         } else if (totalPoint < this.totalMatches * 100 * 0.4) {
-            return GRADE_C_BONUS_PERCENT*1000000/100;
+            return GRADE_C_BONUS_PERCENT*money/100;
         } else if (totalPoint < this.totalMatches * 100 * 0.5) {
-            return GRADE_B_BONUS_PERCENT*1000000/100;
+            return GRADE_B_BONUS_PERCENT*money/100;
         } else {
-            return GRADE_A_BONUS_PERCENT*1000000/100;
+            return GRADE_A_BONUS_PERCENT*money/100;
         }
     }
 
