@@ -28,11 +28,11 @@ public class PlayerTest {
         System.out.println("5.Thoat");
         System.out.print("Enter number: ");
         choose = scanner.nextInt();
+        scanner.nextLine();
     }
 
     public static void enterPlayer() {
         System.out.print("Enter name: ");
-        scanner.nextLine();
         String name = scanner.nextLine();
         System.out.print("Enter income: ");
         double income = scanner.nextDouble();
@@ -54,11 +54,10 @@ public class PlayerTest {
         int vt=0;
         do {
             System.out.print("Enter name player: ");
-            scanner.nextLine();
             name = scanner.nextLine();
             int d=0;
             for(PlayerIncome playerIncome: players){
-                if(playerIncome.getName().contains(name)){
+                if(playerIncome.getName().equals(name)){
                     vt=d;
                     isPlayer = true;
                     break;

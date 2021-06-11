@@ -9,23 +9,23 @@ package player;
  *
  * @author GIA KINH
  */
-public class TournamentIncome extends PlayerIncome implements GradeBonus{
+public class TournamentIncome extends Player implements GradeBonus {
 
     private int totalMatches;
     private int battle;
     private double[] points;
-    
-    
+    private double income;
 
     public TournamentIncome(int totalMatches, int battle, double[] points, double income) {
-        super(income);
+        this.income = income;
         this.totalMatches = totalMatches;
         this.battle = battle;
         this.points = points;
     }
 
     public TournamentIncome(int totalMatches, int battle, double[] points, double income, String name) {
-        super(income, name);
+        super(name);
+        this.income = income;
         this.totalMatches = totalMatches;
         this.battle = battle;
         this.points = points;
@@ -36,12 +36,11 @@ public class TournamentIncome extends PlayerIncome implements GradeBonus{
         this.battle = battle;
         this.points = points;
     }
-    
-     public TournamentIncome(double income, String name) {
-        super(income, name);
-    }
 
-    
+    public TournamentIncome(double income, String name) {
+        super(name);
+        this.income = income;
+    }
 
     public TournamentIncome() {
     }
@@ -70,33 +69,42 @@ public class TournamentIncome extends PlayerIncome implements GradeBonus{
         this.points = points;
     }
 
-       
+    public double getIncome() {
+        return income;
+    }
+
+    public void setIncome(double income) {
+        this.income = income;
+    }
 
     @Override
     public void displayDetails() {
-        System.out.println("Name player: "+super.getName());
-        System.out.println("Grade bonus: "+this.calculateGradeBonus() + "%");
-        System.out.println("Salary: " + (super.getIncome() - super.calculateTax()));
-        System.out.println("Tax: " + super.calculateTax());
+        System.out.println("Name player: " + super.getName());
+        System.out.println("Grade bonus: " + this.calculateGradeBonus() + "%");
+        System.out.println("Income: " + this.income + "$");
     }
 
     @Override
     public double calculateGradeBonus() {
         double totalPoint = 0;
-        if (points.length !=0) {
-            for (double i: points) {
-            totalPoint += i;
-        }
-        }
-        if (totalPoint<this.totalMatches * 100 * 0.3) {
-            return GRADE_D_BONUS_PERCENT; 
-        }else if(totalPoint<this.totalMatches * 100 * 0.4){
-            return GRADE_C_BONUS_PERCENT;
-        }else if(totalPoint<this.totalMatches * 100 * 0.5){
-            return GRADE_B_BONUS_PERCENT;
+        double money = 1000000;
+        if (points != null) {
+            for (double i : points) {
+                totalPoint += i;
+            }
         }else{
-            return GRADE_A_BONUS_PERCENT;
+            System.out.println("Please enter points");
+            return 0;
+        }
+        if (totalPoint < this.totalMatches * 100 * 0.3) {
+            return GRADE_D_BONUS_PERCENT*1000000/100;
+        } else if (totalPoint < this.totalMatches * 100 * 0.4) {
+            return GRADE_C_BONUS_PERCENT*1000000/100;
+        } else if (totalPoint < this.totalMatches * 100 * 0.5) {
+            return GRADE_B_BONUS_PERCENT*1000000/100;
+        } else {
+            return GRADE_A_BONUS_PERCENT*1000000/100;
         }
     }
-    
+
 }

@@ -39,8 +39,8 @@ public class PlayerIncome extends Player implements Tax{
     @Override
     public void displayDetails() {
         System.out.println("Name player: "+super.getName());
-        System.out.println("Salary: " + (this.income - this.calculateTax()));
-        System.out.println("Tax: " + this.calculateTax());
+        System.out.println("Salary: " + (this.income - this.calculateTax())+ "$");
+        System.out.println("Tax: " + this.calculateTax()+"$");
     }
 
     @Override
