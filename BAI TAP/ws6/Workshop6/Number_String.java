@@ -100,7 +100,14 @@ public class Number_String {
     }
     
     public static void showAllLetters(String string){
-        System.out.println("All letters: " + string.replaceAll("[^a-zA-Z]", ""));
+        char[] listChars = string.replaceAll("[^a-zA-Z]", "").toCharArray();
+        ArrayList<Character> list = new ArrayList<>();
+        for(char c: listChars){
+            if (!list.contains(c)) {
+                list.add(c);
+            }
+        }
+        System.out.println("All letters: " + Arrays.toString(list.toArray()));
     }
     
     
