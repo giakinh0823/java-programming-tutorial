@@ -1,0 +1,8 @@
+apple: qua tao
+ball: qua bong
+cat: con meo
+dog: con cho
+elephant: con voi
+fish: con ca
+gift: mon qua
+home: nha
